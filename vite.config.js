@@ -5,7 +5,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import path from 'path';
 
 export default defineConfig({
-  base: '',
+  base: './',
   plugins: [
     react(),
     nodeResolve({
@@ -20,6 +20,7 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
       output: {
         manualChunks: {
