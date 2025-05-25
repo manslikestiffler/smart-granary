@@ -2,12 +2,21 @@
   "appId": "io.smartgrain.app",
   "appName": "SmartGrain",
   "webDir": "dist",
+  "bundledWebRuntime": true,
   "server": {
     "androidScheme": "http",
     "cleartext": true,
     "allowNavigation": ["*"]
   },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
   "android": {
-    "allowMixedContent": true
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true,
+    "initialFocus": true
   }
 }
