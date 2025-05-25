@@ -5,6 +5,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import path from 'path';
 
 export default defineConfig({
+  base: '',
   plugins: [
     react(),
     nodeResolve({

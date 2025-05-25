@@ -1,5 +1,13 @@
 {
   "appId": "io.smartgrain.app",
   "appName": "SmartGrain",
-  "webDir": "dist"
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true,
+    "allowNavigation": ["*"]
+  },
+  "android": {
+    "allowMixedContent": true
+  }
 }
