@@ -2,21 +2,29 @@
   "appId": "io.smartgrain.app",
   "appName": "SmartGrain",
   "webDir": "dist",
-  "bundledWebRuntime": true,
+  "bundledWebRuntime": false,
   "server": {
-    "androidScheme": "http",
+    "hostname": "127.0.0.1",
     "cleartext": true,
     "allowNavigation": ["*"]
   },
   "plugins": {
     "SplashScreen": {
-      "launchShowDuration": 0
+      "launchShowDuration": 0,
+      "launchAutoHide": true,
+      "backgroundColor": "#ffffffff",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false,
+      "androidSpinnerStyle": "large",
+      "spinnerColor": "#999999"
     }
   },
   "android": {
     "allowMixedContent": true,
     "captureInput": true,
     "webContentsDebuggingEnabled": true,
-    "initialFocus": true
+    "initialFocus": true,
+    "backgroundColor": "#ffffff"
   }
 }

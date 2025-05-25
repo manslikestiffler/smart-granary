@@ -5,7 +5,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import path from 'path';
 
 export default defineConfig({
-  base: '/',
+  base: '',
   plugins: [
     react(),
     nodeResolve({
@@ -20,14 +20,15 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    assetsDir: '',
+    assetsDir: 'assets',
     rollupOptions: {
       output: {
-        entryFileNames: '[name].js',
-        chunkFileNames: '[name].js',
-        assetFileNames: '[name].[ext]'
+        entryFileNames: 'assets/[name].[hash].js',
+        chunkFileNames: 'assets/[name].[hash].js',
+        assetFileNames: 'assets/[name].[hash].[ext]'
       }
-    }
+    },
+    sourcemap: true
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom']
