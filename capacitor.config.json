@@ -1,7 +1,7 @@
 {
   "appId": "io.smartgrain.app",
   "appName": "SmartGrain",
-  "webDir": "dist",
+  "webDir": "www",
   "bundledWebRuntime": false,
   "server": {
     "hostname": "127.0.0.1",
